@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghul Sekar — IT Student & Developer</title>
+    <meta name="description" content="Portfolio of Raghul Sekar — a B.Tech Information Technology student building projects across full-stack development, IoT hardware, and AI/ML.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+
+    <!-- Boot / loading screen -->
+    <div id="boot-loader">
+        <div class="boot-window">
+            <div class="boot-titlebar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="boot-label">portfolio.sh</span>
+            </div>
+            <div class="boot-lines" id="boot-lines"></div>
+        </div>
+    </div>
+
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <div class="console-bar">
+                        <span class="console-dot"></span><span class="console-dot"></span><span class="console-dot"></span>
+                        <span class="console-title">raghul@dev ~ </span>
+                    </div>
+                    <div class="console-body">
+                        <div><span class="console-prompt">$</span> whoami</div>
+                        <div>raghul_sekar</div>
+                        <div><span class="console-prompt">$</span> cat <span class="console-key">focus.txt</span></div>
+                        <div>full-stack · IoT · AI/ML</div>
+                        <div><span class="console-prompt">$</span> status</div>
+                        <div>building & shipping<span class="console-cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Raghul Sekar</span>
+                    IT Student & Full-Stack / IoT Developer
+                </h1>
+                <p>
+                    First-year B.Tech Information Technology student based in Chennai, building
+                    real projects across mobile apps, IoT hardware, and AI/ML — and learning by
+                    shipping rather than just studying.
+                </p>
+                <div class="btn-con">
+                    <a href="resume.pdf" class="main-btn" download>
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>About Me</h4>
+                    <p>
+                        I'm Raghul Sekar, a first-year B.Tech Information Technology student in Chennai
+                        with a strong pull toward building things rather than just reading about them. My
+                        work spans mobile development, IoT hardware, and AI/ML — from a Flutter + FastAPI
+                        music app to an ESP32-based IoT voltage monitor built for a hackathon.<br><br>
+                        I like picking apart how systems actually work, whether that's wiring a sensor,
+                        debugging a deployment pipeline, or getting an AI model to behave the way I want
+                        it to. My goal is to keep building real, working projects and get better with
+                        every one of them.
+                    </p>
+                    <div class="btn-con">
+                        <a href="resume.pdf" class="main-btn" download>
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">3</p>
+                            <p class="small-text">Real Projects <br /> Shipped</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1st</p>
+                            <p class="small-text">Year <br /> B.Tech IT</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">IoT</p>
+                            <p class="small-text">Hardware & <br /> Embedded Focus</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">AI</p>
+                            <p class="small-text">Applied ML <br /> in Real Apps</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats" id="skills">
+                <h4 class="stat-title">Skills & Technologies</h4>
+
+                <div class="skill-category">
+                    <div class="skill-category-title"><i class="fas fa-code"></i> Languages</div>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">Python</p>
+                            <div class="progress-con"><p class="prog-text">80%</p><div class="progress"><span style="width:80%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">Dart</p>
+                            <div class="progress-con"><p class="prog-text">65%</p><div class="progress"><span style="width:65%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">C / C++</p>
+                            <div class="progress-con"><p class="prog-text">60%</p><div class="progress"><span style="width:60%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">HTML / CSS / JS</p>
+                            <div class="progress-con"><p class="prog-text">70%</p><div class="progress"><span style="width:70%"></span></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title"><i class="fas fa-mobile-alt"></i> Mobile & Backend</div>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">Flutter</p>
+                            <div class="progress-con"><p class="prog-text">65%</p><div class="progress"><span style="width:65%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">FastAPI</p>
+                            <div class="progress-con"><p class="prog-text">60%</p><div class="progress"><span style="width:60%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">REST APIs</p>
+                            <div class="progress-con"><p class="prog-text">55%</p><div class="progress"><span style="width:55%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">SQLite</p>
+                            <div class="progress-con"><p class="prog-text">70%</p><div class="progress"><span style="width:70%"></span></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title"><i class="fas fa-microchip"></i> IoT & Hardware</div>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">ESP32-C3 / PlatformIO</p>
+                            <div class="progress-con"><p class="prog-text">60%</p><div class="progress"><span style="width:60%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">ESPHome</p>
+                            <div class="progress-con"><p class="prog-text">55%</p><div class="progress"><span style="width:55%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">Sensor Interfacing</p>
+                            <div class="progress-con"><p class="prog-text">55%</p><div class="progress"><span style="width:55%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">MQTT / Networking</p>
+                            <div class="progress-con"><p class="prog-text">50%</p><div class="progress"><span style="width:50%"></span></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title"><i class="fas fa-brain"></i> AI / ML</div>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">Gemini API</p>
+                            <div class="progress-con"><p class="prog-text">65%</p><div class="progress"><span style="width:65%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">Prompt Engineering</p>
+                            <div class="progress-con"><p class="prog-text">65%</p><div class="progress"><span style="width:65%"></span></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title"><i class="fas fa-tools"></i> Tools & Platforms</div>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <p class="prog-title">Git / GitHub</p>
+                            <div class="progress-con"><p class="prog-text">70%</p><div class="progress"><span style="width:70%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">VS Code</p>
+                            <div class="progress-con"><p class="prog-text">80%</p><div class="progress"><span style="width:80%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">Vercel / Deployment</p>
+                            <div class="progress-con"><p class="prog-text">55%</p><div class="progress"><span style="width:55%"></span></div></div>
+                        </div>
+                        <div class="progress-bar">
+                            <p class="prog-title">Linux</p>
+                            <div class="progress-con"><p class="prog-text">55%</p><div class="progress"><span style="width:55%"></span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="experience">
+            <div class="main-title">
+                <h2>My <span>Journey</span><span class="bg-text">Experience</span></h2>
+            </div>
+            <p class="port-text">Self-directed projects and hackathon work so far.</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-laptop-code"></i></div>
+                    <span class="tl-duration">2025 — Present</span>
+                    <h5>Student Developer <span>· Independent Projects</span></h5>
+                    <p>
+                        Building Melodia, a Flutter + FastAPI music streaming app with Gemini-powered
+                        recommendations, alongside the MSME Smart Voltage Guardian — an ESP32-C3 IoT
+                        voltage monitoring platform with a cloud-connected dashboard for small manufacturers.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-trophy"></i></div>
+                    <span class="tl-duration">2025</span>
+                    <h5>MSME Idea Hackathon 6.0 <span>· Submission</span></h5>
+                    <p>
+                        Submitted a concept note for the MSME Smart Voltage Guardian under the Energy
+                        Efficiency / Industry 4.0 theme — an IoT voltage monitoring platform built on
+                        ESP32-C3 for small manufacturers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Projects</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Real projects I've built — no filler, no templates.
+            </p>
+            <div class="portfolios">
+
+                <div class="portfolio-item">
+                    <div class="p-top">
+                        <div class="p-icon"><i class="fas fa-music"></i></div>
+                        <span class="p-status">In Progress</span>
+                    </div>
+                    <h3>Melodia</h3>
+                    <p class="p-summary">
+                        A Flutter + FastAPI music streaming app with synced lyrics, playlists, and
+                        Gemini-powered song recommendations and library matching.
+                    </p>
+                    <div class="p-tags">
+                        <span>Flutter</span><span>FastAPI</span><span>Gemini API</span><span>SQLite</span>
+                    </div>
+                    <div class="icons">
+                        <a href="https://github.com/Raghul-1908/melodia-music-player" target="_blank" class="icon" aria-label="GitHub repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="p-top">
+                        <div class="p-icon"><i class="fas fa-bolt"></i></div>
+                        <span class="p-status live">Hackathon</span>
+                    </div>
+                    <h3>MSME Smart Voltage Guardian</h3>
+                    <p class="p-summary">
+                        An ESP32-C3 IoT voltage monitoring platform with a cloud-connected web dashboard,
+                        built for small manufacturers as an MSME Idea Hackathon 6.0 submission.
+                    </p>
+                    <div class="p-tags">
+                        <span>ESP32-C3</span><span>IoT</span><span>PlatformIO</span><span>Dashboard</span>
+                    </div>
+                    <div class="icons">
+                        <a href="https://github.com/Raghul-1908" target="_blank" class="icon" aria-label="GitHub profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="p-top">
+                        <div class="p-icon"><i class="fas fa-globe"></i></div>
+                        <span class="p-status live">Live</span>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p class="p-summary">
+                        This site — a hand-built, self-hosted personal portfolio with a terminal-inspired
+                        aesthetic, dark/light themes, and zero templated stock content.
+                    </p>
+                    <div class="p-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="icons">
+                        <a href="https://github.com/Raghul-1908" target="_blank" class="icon" aria-label="GitHub profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container" id="education">
+            <div class="main-title">
+                <h2>My <span>Education</span><span class="bg-text">Education</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-user-graduate"></i></div>
+                    <span class="tl-duration">2025 — Present</span>
+                    <h5>B.Tech Information Technology <span>· 1st Year</span></h5>
+                    <p>
+                        Chennai, Tamil Nadu, India. Coursework alongside self-directed exploration of
+                        full-stack development, IoT, and AI/ML through hands-on projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="blog">
+            <div class="main-title">
+                <h2>My <span>Writing</span><span class="bg-text">Blog</span></h2>
+            </div>
+            <p class="port-text">Notes on what I'm building and learning — coming soon.</p>
+            <div class="blogs">
+                <div class="blog">
+                    <div class="blog-icon"><i class="fas fa-pen-nib"></i></div>
+                    <div class="blog-text">
+                        <h4>Build logs</h4>
+                        <p>Write-ups on Melodia, the IoT voltage guardian, and whatever I break next.</p>
+                        <span class="soon-tag">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="blog-text">
+                        <h4>IoT notes</h4>
+                        <p>Hardware debugging, ESP32 quirks, and lessons from wiring things wrong first.</p>
+                        <span class="soon-tag">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog-icon"><i class="fas fa-robot"></i></div>
+                    <div class="blog-text">
+                        <h4>AI experiments</h4>
+                        <p>Prompting, integration, and practical AI/ML notes from real app work.</p>
+                        <span class="soon-tag">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Let's Connect</h4>
+                        <p>
+                            Open to learning opportunities, collaborations, and hackathons. Feel free to
+                            reach out through email, phone, or GitHub.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p><span>: Chennai, Tamil Nadu, India</span></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p><span>: ig.raghulsekar@gmail.com</span></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p><span>: B.Tech Information Technology</span></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p><span>: +91 90433 01890</span></p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p><span>: English, Tamil</span></p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://github.com/Raghul-1908" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/Raghul-sekar-ig" target="_blank" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:ig.raghulsekar@gmail.com" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="https://formspree.io/f/meebdovr" method="POST" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" name="name" required placeholder="YOUR NAME">
+                                <input type="email" name="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="subject" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="message" cols="15" rows="8" required placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit" class="main-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="experience">
+            <i class="fas fa-history"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="education">
+            <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="control" data-id="blog">
+            <i class="fas fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
